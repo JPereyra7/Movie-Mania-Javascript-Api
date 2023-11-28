@@ -60,6 +60,6 @@ inputContainer.appendChild(leButton);
 
 // Append the logo to the input container
 const logo = document.createElement("img");
-logo.src = "/images/moviemania-logo.png";
+logo.src = "/public/moviemania-logo.png";
 logo.className = "logogo";
 inputContainer.insertBefore(logo, searchText);
