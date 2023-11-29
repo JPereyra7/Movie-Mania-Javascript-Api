@@ -22,7 +22,7 @@ leButton.addEventListener("click", () => {
   resultsContainer.className = "resultsContainer";
 
   // Fetch data based on the input value
-  fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=b15dbd6&s=${searchValue}`)
+  fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=b15dbd6&s=${searchValue}`)
     .then((response) => response.json())
     .then((data) => {
       // Process the fetched data
@@ -60,6 +60,6 @@ inputContainer.appendChild(leButton);
 
 // Append the logo to the input container
 const logo = document.createElement("img");
-logo.src = "/public/moviemania-logo.png";
+logo.src = "/moviemania-logo.png";
 logo.className = "logogo";
 inputContainer.insertBefore(logo, searchText);
