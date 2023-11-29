@@ -22,8 +22,7 @@ leButton.addEventListener("click", () => {
   resultsContainer.className = "resultsContainer";
 
   // Fetch data based on the input value
-  const apiKey = import.meta.env.VITE_API_KEY;
-  fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}&s=${searchValue}`)
+  fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=b15dbd6&s=${searchValue}`)
     .then((response) => response.json())
     .then((data) => {
       // Process the fetched data
